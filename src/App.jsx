@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
+import HeroSection from './components/Landing/HeroSection'
+import SearchBox from './components/Landing/Searchbox'
 
 function App() {
  
@@ -9,7 +10,9 @@ function App() {
   return (
     <>
       <div>
-       
+       <Navbar/>
+       <HeroSection/>
+       <SearchBox />
       </div>
     </>
   )
