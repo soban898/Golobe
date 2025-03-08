@@ -92,9 +92,9 @@
     padding: 20px;
     border-radius: 10px;
     position: fixed;
-    bottom: 20%;
+    bottom: 52%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50%);
     width: 90%;
     max-width: 400px;
   }
@@ -123,18 +123,21 @@
     }
 
     .search-box {
-        max-width: 75%;
-        padding: 12px;
+        max-width: 63%;
+        padding: 4px;
         border-radius: 8px;
         transform: translateY(-49px);
       }
     
       .destination {
-        font-size: 14px;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 10px;
       }
     
       .hamburger-button {
-        font-size: 18px;
+        font-size: 14px;
+        margin-right: 7px;
       }
   }
   

@@ -1,0 +1,50 @@
+.Recent-search {
+    text-align: center;
+    margin-bottom: 20px; /* Heading aur items ke beech gap */
+  }
+  
+  .Recent-search h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px; /* Thoda extra spacing */
+  }
+  
+  .recent-items {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Increase gap between items */
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .recent-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Image aur text ke darmiyan gap */
+    width: auto;
+  }
+  
+  .recent-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+  }
+  
+
+  .recent-item-text{
+    font-size: 13px;
+  }
+  /* Responsive: Chhoti screen pe text neeche chala jaye */
+  @media (max-width: 768px) {
+    .recent-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .recent-items{
+        gap: 60px;
+    }
+  }
+  
+  
+  
+  

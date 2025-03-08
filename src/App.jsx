@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './components/Landing/HeroSection'
 import SearchBox from './components/Landing/Searchbox'
+import Recent from './components/Landing/Recent'
 
 function App() {
  
@@ -13,6 +14,7 @@ function App() {
        <Navbar/>
        <HeroSection/>
        <SearchBox />
+       <Recent />
       </div>
     </>
   )
