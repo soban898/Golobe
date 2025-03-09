@@ -14,28 +14,28 @@ const Recent = () => {
       <img src={city1} alt="Istanbul" />
       <div className="recent-item-text">
         <p><strong>Istanbul, Turkey</strong></p>
-        <p>325 places</p>
+        <p className='places'>325 places</p>
       </div>
     </div>
     <div className="recent-item">
       <img src={city2} alt="Sydney" />
       <div className="recent-item-text">
         <p><strong>Sydney, Australia</strong></p>
-        <p>325 places</p>
+        <p className='places'>325 places</p>
       </div>
     </div>
     <div className="recent-item">
       <img src={city3} alt="Baku" />
       <div className="recent-item-text">
         <p><strong>Baku, Azerbaijan</strong></p>
-        <p>325 places</p>
+        <p className='places'>325 places</p>
       </div>
     </div>
     <div className="recent-item">
       <img src={city4} alt="Malé" />
       <div className="recent-item-text">
         <p><strong>Malé, Maldives</strong></p>
-        <p>325 places</p>
+        <p className='places'>325 places</p>
       </div>
     </div>
   </div>

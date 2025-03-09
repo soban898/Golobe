@@ -1,22 +1,23 @@
 import React from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
-import HeroSection from './components/Landing/HeroSection'
-import SearchBox from './components/Landing/Searchbox'
-import Recent from './components/Landing/Recent'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from './Layout/Layout'
+import Landing from './pages/Landing'
+import Results from './pages/Results'
+
 
 function App() {
- 
-
   return (
-    <>
-      <div>
-       <Navbar/>
-       <HeroSection/>
-       <SearchBox />
-       <Recent />
-      </div>
-    </>
+   <>
+   <Router>
+    <Layout>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/results' element={<Results />} />
+        </Routes>
+        </Layout>
+        </Router>
+   </>
   )
 }
 

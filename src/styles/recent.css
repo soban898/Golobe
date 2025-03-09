@@ -29,6 +29,10 @@
     border-radius: 8px;
   }
   
+  .places{
+    display: flex;
+    align-items: flex-start;
+  }
 
   .recent-item-text{
     font-size: 13px;
