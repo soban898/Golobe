@@ -9,13 +9,16 @@
   }
   
   .recent-items {
-    display: flex;
-    justify-content: center;
-    gap: 80px; /* Increase gap between items */
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 items in a row */
+    gap: 40px; /* Adjust spacing */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: fit-content; /* Shrink to fit content */
+    margin: 0 auto; /* Center the entire grid */
+}
+
+
   .recent-item {
     display: flex;
     align-items: center;
@@ -49,6 +52,17 @@
     }
   }
   
-  
+  @media (max-width: 993px) {
+    .recent-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 items in a row */
+    }
+}
+
+/* @media (max-width: 600px) {
+  .recent-items {
+      grid-template-columns: repeat(1, 1fr); 
+  }
+}
+   */
   
   

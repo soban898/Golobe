@@ -16,16 +16,19 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-  }
+    margin-bottom: 2rem; /* Add space between text and cards */
+}
   
   /* Responsive Grid Layout */
   .card-container {
-    margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 cards in one row */
+    gap: 15px; /* Reduce gap to fix extra space */
     justify-content: center;
-  }
+    width: 100%; /* Ensure it takes full width */
+    max-width: 1200px; /* Prevents excessive stretching */
+    margin: 0 auto; /* Centers the container */
+}
   
   /* Individual Card */
   .card {
@@ -88,3 +91,19 @@
     background: #10b981;
   }
   
+
+  @media (max-width: 1093px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2x2 layout */
+        gap: 10px; /* Adjust gap for better spacing */
+        width: 80%; /* Reduce width to minimize extra space */
+    }
+}
+
+/* Adjust for Smaller Screens */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column on smaller screens */
+        width: 90%;
+    }
+}

@@ -36,7 +36,7 @@ const destinations = [
   },
 ];
 
-const CardComponent = () => {
+const City = () => {
     return (
         <div className="container">
           <h2 className="title">Fall into travel</h2>
@@ -60,4 +60,4 @@ const CardComponent = () => {
       );
     };
 
-export default CardComponent;
+export default City;
